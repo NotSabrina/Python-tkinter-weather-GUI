@@ -6,7 +6,7 @@ import webbrowser
 import matplotlib.pyplot as plt
 
 def cek_weather():
-    key = "b25298676d454e96aae53803242812"  # API dari weatherapi.com
+    key = "put key here"  # API dari weatherapi.com
     lokasi_cek = Serlok.get()
     url = f"http://api.weatherapi.com/v1/current.json?key={key}&q={lokasi_cek}"
 
@@ -63,7 +63,7 @@ def cek_weather():
         print("Gagal mengambil data")
 
 def cek_weather_lama():
-    key = "b25298676d454e96aae53803242812"  # API dari weatherapi.com
+    key = "put key here"  # API dari weatherapi.com
     lokasi_cek = Serlok.get()
     url = f"http://api.weatherapi.com/v1/history.json?key={key}&q={lokasi_cek}&dt={waktu_kemarin}"
 
@@ -118,7 +118,7 @@ def cek_weather_lama():
         print("Gagal mengambil data")
 
 def cek_temperatur_weather_depan():
-    key = "b25298676d454e96aae53803242812"  # API dari weatherapi.com
+    key = "put key here"  # API dari weatherapi.com
     lokasi_cek = Serlok.get()
     url = f"http://api.weatherapi.com/v1/forecast.json?key={key}&q={lokasi_cek}&days=3"
 
@@ -141,7 +141,7 @@ def cek_temperatur_weather_depan():
         print(f"Gagal mengambil data :{response.status_code}")
 
 def cek_kondisi_weather_depan():
-    key = "b25298676d454e96aae53803242812"  # API dari weatherapi.com
+    key = "put key here"  # API dari weatherapi.com
     lokasi_cek = Serlok.get()
     url = f"http://api.weatherapi.com/v1/forecast.json?key={key}&q={lokasi_cek}&days=3"
 
